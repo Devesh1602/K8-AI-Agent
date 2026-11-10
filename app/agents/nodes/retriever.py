@@ -1,3 +1,4 @@
+#The Retrieve Node is the knowledge-gathering component of your RAG agent. Qdrant finds 15 possible matches quickly, FlashRank carefully reorders them, and the five strongest candidates are passed to the Generator to produce a grounded answer.
 import logfire
 
 # Import the shared LangGraph state.
