@@ -37,3 +37,9 @@ python -m app.ingestion.processor DATA/noisy_sample_15 noisy
 ```
 
 Use `--wipe` when you want a fresh Qdrant collection. If you want to append noisy files after clean data, omit `--wipe` on the noisy ingestion command.
+
+# To run the /app/main.py (to run an app):-
+uvicorn app.main:app --reload --port 8000
+
+#To run Streamlit UI:-
+streamlit run ui/app.py
